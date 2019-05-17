@@ -1,0 +1,28 @@
+<html>
+<h1> Hack The Planet? </h1>
+
+
+<script>
+    load_url = function(url) {
+                var i = new Image();
+                i.style = "display:none";
+                i.src=url;
+    }
+    
+    keyword="Hack The Planet?"
+    for(n=0; n<5; n++) {
+        // Google
+        load_url("https://www.google.com/search?q=" + keyword + " _" + n)
+        // Youtube
+        load_url("https://www.youtube.com/results?page=1&utm_source=opensearch&search_query=" + keyword + " _" + n)
+        // Facebook
+        load_url("https://www.facebook.com/search/top/?q=" + keyword + " _" + n)
+        // LinkedIn
+        load_url("https://www.linkedin.com/search/results/all/?origin=GLOBAL_SEARCH_HEADER&keywords=" + keyword + " _" + n)
+    }
+</script>
+
+
+</html>
+
+
