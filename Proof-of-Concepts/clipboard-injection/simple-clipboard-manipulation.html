@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple Clipboard Manipulation</title>
+</head>
+<body>
+<button onclick="copyText()">Copy Hello World</button>
+
+<script>
+function copyText() {
+  navigator.clipboard.writeText("Hello World");
+}
+</script>
+</body>
+</html>
